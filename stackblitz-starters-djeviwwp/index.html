@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img
+        id="header_logo"
+        src="/Bookhaven/Logo/Client3_LogoPalette1_FFF7EE.png"
+        alt="Logo"
+      />
+
+      <h1>Book Haven Bookstore</h1>
+
+      <nav>
+        <a href="/" aria-current="page">Home</a>
+        <a href="/gallery.html">Gallery</a>
+        <a href="/about.html">About</a>
+        <a href="/events.html">Events</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home_intro">
+        <hr class="solid_div" />
+        <h2 class="centered_page_header">The Home of Book Enthusiasts</h2>
+        <p id="quote_main_page" style="text-align: center; font-weight: normal">
+          “Discover your next favorite story — right here at Book Haven.”
+        </p>
+        <div class="home_intro_image_container">
+          <img
+            class="home_intro_images"
+            src="/Bookhaven/Products/Client3_Book1.png"
+            alt="Book cover 1"
+          />
+          <img
+            class="home_intro_images"
+            src="/Bookhaven/Products/Client3_Book2.png"
+            alt="Book cover 2"
+          />
+        </div>
+      </section>
+
+      <section id="home_promo">
+        <div class="promo_obj">
+          <h3>Get 20% Off All Fiction Titles!</h3>
+          <p>
+            Stock up on your summer reads with our limited-time fiction sale.
+            Ends July 15!
+          </p>
+        </div>
+
+        <div class="promo_obj">
+          <h3>10% Off for Student Shoppers</h3>
+          <p>
+            Show your student ID at checkout to receive a discount on all
+            purchases, in-store or online.
+          </p>
+        </div>
+
+        <div class="promo_obj">
+          <h3>Free Shipping on Orders Over $25</h3>
+          <p>
+            This weekend only, enjoy free delivery on all orders over $25, no
+            promo code needed!
+          </p>
+        </div>
+      </section>
+
+      <section id="home_perks">
+        <hr class="solid_div" />
+        <div class="perks_container">
+          <h3 style="padding-top: 20px; margin: auto">Why Shop Here?</h3>
+          <hr style="border:none; height:0 margin: 0;" />
+          <div class="perk_objs">
+            <div class="perk_bg">
+              <h4>Wide Selection of Books</h4>
+              <p class="perk_info">
+                From bestsellers to hidden gems, we offer a carefully curated
+                collection for every reader..
+              </p>
+            </div>
+            <div class="perk_bg">
+              <h4>Affordable Prices</h4>
+              <p class="perk_info">
+                Great books at fair prices, with regular promotions and
+                discounts for students and members.
+              </p>
+            </div>
+            <div class="perk_bg">
+              <h4>Fast Shipping and Easy Ordering</h4>
+              <p class="perk_info">
+                Convenient online shopping with quick delivery and excellent
+                customer support..
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="home_categories">
+        <hr class="solid_div" />
+        <div class="categories_container">
+          <h3 class="section_heading">Shop Categories</h3>
+          <div class="category_buttons">
+            <button class="category_btn">Fiction</button>
+            <button class="category_btn">Non-Fiction</button>
+            <button class="category_btn">Children’s Books</button>
+            <button class="category_btn">Academic</button>
+            <button class="category_btn">Magazines</button>
+            <button class="category_btn">Office Supplies</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site_footer">
+      <!-- Top Footer Nav Buttons -->
+      <div class="footer_nav_buttons">
+        <button onclick="sendCustomAlert('You clicked facebook link.')" class="footer_btn">
+          <img src="Bookhaven/Icons/icons8-facebook.svg" alt="fb logo" />
+        </button>
+        <button onclick="sendCustomAlert('You clicked Twitter link.')" class="footer_btn">
+          <img src="Bookhaven/Icons/icons8-twitter.svg" alt="twitter logo" />
+        </button>
+        <button onclick="sendCustomAlert('You clicked Instagram link.')" class="footer_btn">
+          <img
+            src="Bookhaven/Icons/icons8-instagram.svg"
+            alt="instagram logo"
+          />
+        </button>
+        <button onclick="sendCustomAlert('You clicked Tiktok link.')" class="footer_btn">
+          <img src="Bookhaven/Icons/icons8-tiktok.svg" alt="tiktok logo" />
+        </button>
+      </div>
+
+      <hr class="solid_div" />
+
+      <!-- Newsletter Subscription -->
+    <form id="subscribeForm" class="newsletter_section">
+      <h4>Subscribe to Our Newsletter</h4>
+      <input id="subscribeEmail" type="email" placeholder="Enter your email" class="newsletter_input" />
+      <button type="submit" id="subscribeBtn" class="subscribe_btn">Subscribe</button>
+    </form>
+
+      <hr class="solid_div" />
+
+     <!-- Bottom Footer Links -->
+    <div class="footer_links">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="events.html">Events</a>
+  </div>
+    </footer>
+
+    <script>
+      
+    </script>
+
+    <script src="footer.js">
+    </script>
+  </body>
+</html>

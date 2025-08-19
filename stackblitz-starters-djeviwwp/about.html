@@ -1,0 +1,126 @@
+<!DOCTYPE >
+<html lang="en">
+  <!-- head -->
+  <head>
+    <title>About</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css"/>
+    <script type="module" src="about.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <!-- body -->
+  <body>
+
+    <header>
+      <img id="header_logo" src="/Bookhaven/Logo/Client3_LogoPalette1_FFF7EE.png" alt="Logo"/>
+
+      <h1>Book Haven Bookstore</h1>
+
+      <nav>
+        <a  href="/">Home</a>
+        <a  href="/gallery.html">Gallery</a>
+        <a  href="/about.html" aria-current="page">About</a>
+        <a  href="/events.html">Events</a>
+      </nav>
+    </header>
+
+    <main id="about_main"> 
+       <section>
+        <hr class="solid_div">
+        <h2 class="centered_page_header">About Us</h2>
+      </section>
+
+      <!-- Business Summary -->
+    <section class="about_intro">
+    <img src="/Bookhaven/Logo/Client3_LogoPalette1_EE583F.png" alt="Book Haven Logo" class="about_logo" />
+    <p class="about_summary">
+      Book Haven Bookstore is a local treasure for book enthusiasts,
+      offering a diverse selection of books, magazines, journals, and office
+      supplies. With a deep-rooted commitment to fostering literary
+      exploration and a love for reading, it is embarking on the creation of
+      an online presence that mirrors its dedication to the world of words.
+      Serving a broad audience of book lovers and knowledge seekers, its
+      central goal is to amplify its visibility, cultivate a vibrant
+      literary community, and simplify the process of book inquiries and
+      purchases. Its target audience comprises avid readers, students, and
+      individuals in search of high-quality reading materials and office
+      essentials.
+    </p>
+  </section>
+
+  <hr class="solid_div" />
+
+  <!-- Contact Form -->
+  <section class="contact_us_section">
+    <h2>Contact Us</h2>
+    <form class="contact_form">
+    <label for="name">Name: <span class="required" style="color:red">*</span></label>
+    <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address: <span class="required" style="color:red">*</span></label>
+<input type="email" id="email" name="email"       required />
+
+  <label for="phone">Phone Number: <span  class="required" style="color:red">*</span></label>
+  <input type="tel" id="phone" name="phone" required />
+
+      <label for="info">Additional Information:</label>
+      <textarea id="info" name="info" rows="4"></textarea>
+
+      <div class="form_checkbox">
+        <input type="checkbox" id="invoice" name="invoice" />
+        <label for="invoice">Request a custom invoice</label>
+      </div>
+
+      <div class="form_buttons">
+        <button type="submit">Submit</button>
+        <button id="clearbtn" type="reset">Clear Form</button>
+      </div>
+    </form>
+  </section>
+
+    </main>
+
+    <footer id="site_footer">
+    <!-- Top Footer Nav Buttons -->
+    <div class="footer_nav_buttons">
+      <button onclick="sendCustomAlert('You clicked facebook link.')" class="footer_btn">
+        <img src="Bookhaven/Icons/icons8-facebook.svg" alt="fb logo" />
+      </button>
+      <button onclick="sendCustomAlert('You clicked Twitter link.')" class="footer_btn">
+        <img src="Bookhaven/Icons/icons8-twitter.svg" alt="twitter logo" />
+      </button>
+      <button onclick="sendCustomAlert('You clicked Instagram link.')" class="footer_btn">
+        <img
+          src="Bookhaven/Icons/icons8-instagram.svg"
+          alt="instagram logo"
+        />
+      </button>
+      <button onclick="sendCustomAlert('You clicked Tiktok link.')" class="footer_btn">
+        <img src="Bookhaven/Icons/icons8-tiktok.svg" alt="tiktok logo" />
+      </button>
+    </div>
+
+    <hr class="solid_div" />
+
+    <!-- Newsletter Subscription -->
+  <form id="subscribeForm" class="newsletter_section">
+    <h4>Subscribe to Our Newsletter</h4>
+    <input id="subscribeEmail" type="email" placeholder="Enter your email" class="newsletter_input" />
+    <button type="submit" id="subscribeBtn" class="subscribe_btn">Subscribe</button>
+  </form>
+
+    <hr class="solid_div" />
+
+   <!-- Bottom Footer Links -->
+  <div class="footer_links">
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="about.html">About</a>
+  <a href="events.html">Events</a>
+</div>
+  </footer>
+  <script src="footer.js">
+  </script>
+  </body>
+</html>

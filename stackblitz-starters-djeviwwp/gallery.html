@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css"/> 
+  </head>
+  <body>
+    <header>
+      <img id="header_logo" src="/Bookhaven/Logo/Client3_LogoPalette1_FFF7EE.png" alt="Logo"/>
+
+      <h1>Book Haven Bookstore</h1>
+
+      <nav>
+        <a  href="/">Home</a>
+        <a  href="/gallery.html" aria-current="page">Gallery</a>
+        <a  href="/about.html">About</a>
+        <a  href="/events.html">Events</a>
+      </nav>
+    </header>
+    <main> 
+    <section>
+    <hr class="solid_div" />
+    <h2 class="centered_page_header">Gallery</h2>
+  </section>
+
+  <!-- Use gallery_main to wrap the button + products vertically -->
+  <section id="gallery_main">
+    <!-- View Cart Button ABOVE the products -->
+    <div class="cart_top_bar">
+      <button class="view_cart_btn" id="viewCartBtn">View Cart</button>
+    </div>
+
+
+  <!-- Product Grid -->
+  <section class="product_grid">
+    <div class="product_card">
+      <img src="/Bookhaven/Products/Client3_Book1.png" alt="Product 1" />
+      <h3>Brie Mine 4Ever</h3>
+      <p>A brief description of the book goes here.</p>
+      <button onclick="addToCart('Brie Mine 4Ever')" class="add_to_cart_btn" data-item="Brie Mine 4Ever">Add to Cart</button>
+    </div>
+
+    <div class="product_card">
+      <img src="/Bookhaven/Products/Client3_Book2.png" alt="Product 2" />
+      <h3>Glory Riders</h3>
+      <p>A brief description of the book goes here.</p>
+      <button onclick="addToCart('Glory Riders')" class="add_to_cart_btn" data-item="Glory Riders">Add to Cart</button>
+    </div>
+
+    <div class="product_card">
+      <img src="/Bookhaven/Products/Client3_Book3.png" alt="Product 3" />
+      <h3>Sorcerer's Shadowed Chronicles</h3>
+      <p>A brief description of the book goes here.</p>
+      <button onclick="addToCart('Sorcerer Shadowed Chronicles')" class="add_to_cart_btn" data-item="Sorcerer's Shadowed Chronicles">Add to Cart</button>
+    </div>
+
+    <div class="product_card">
+      <img src="/Bookhaven/Products/Client3_Magazine1.png" alt="Product 4" />
+      <h3>Ball Magazine</h3>
+      <p>A brief description of the book goes here.</p>
+      <button onclick="addToCart('Ball Magazine')" class="add_to_cart_btn" data-item="Ball Magazine">Add to Cart</button>
+    </div>
+
+    <div class="product_card">
+      <img src="/Bookhaven/Products/Client3_Magazine2.png" alt="Product 5" />
+      <h3>Travel Magazine</h3>
+      <p>A brief description of the book goes here.</p>
+      <button onclick="addToCart('Travel Magazine')" class="add_to_cart_btn" data-item="Travel Magazine">Add to Cart</button>
+    </div>
+
+    <div class="product_card">
+      <img src="/Bookhaven/Products/Client3_Magazine3.png" alt="Product 6" />
+      <h3>Eat Magazine</h3>
+      <p>A brief description of the book goes here.</p>
+      <button onclick="addToCart('Eat Magazine')" class="add_to_cart_btn" data-item="Eat Magazine">Add to Cart</button>
+    </div>
+
+    <div class="product_card">
+      <img src="/Bookhaven/Products/Client3_Notebook.png" alt="Product 7" />
+      <h3>Bookhaven Book</h3>
+      <p>A brief description of the book goes here.</p>
+      <button onclick="addToCart('Bookhaven Book')" class="add_to_cart_btn" data-item="Bookhaven Book">Add to Cart</button>
+    </div>
+
+    <div class="product_card">
+      <img src="/Bookhaven/Products/Client3_Stickers.png" alt="Product 8" />
+      <h3>Book Stickers</h3>
+      <p>A brief description of the book goes here.</p>
+      <button onclick="addToCart('Stickers')" class="add_to_cart_btn" data-item="Stickers">Add to Cart</button>
+    </div>
+
+    <div class="product_card">
+      <img src="/Bookhaven/Products/Client3_ToteBag.png" alt="Product 9" />
+      <h3>Tote Bag</h3>
+      <p>A brief description of the book goes here.</p>
+      <button onclick="addToCart('Tote Bag')" class="add_to_cart_btn" data-item="Tote Bag">Add to Cart</button>
+    </div>
+
+  </section>
+  <hr class="solid_div">
+    </main>
+
+    <footer id="site_footer">
+    <!-- Top Footer Nav Buttons -->
+    <div class="footer_nav_buttons">
+      <button onclick="sendCustomAlert('You clicked facebook link.')" class="footer_btn">
+        <img src="Bookhaven/Icons/icons8-facebook.svg" alt="fb logo" />
+      </button>
+      <button onclick="sendCustomAlert('You clicked Twitter link.')" class="footer_btn">
+        <img src="Bookhaven/Icons/icons8-twitter.svg" alt="twitter logo" />
+      </button>
+      <button onclick="sendCustomAlert('You clicked Instagram link.')" class="footer_btn">
+        <img
+          src="Bookhaven/Icons/icons8-instagram.svg"
+          alt="instagram logo"
+        />
+      </button>
+      <button onclick="sendCustomAlert('You clicked Tiktok link.')" class="footer_btn">
+        <img src="Bookhaven/Icons/icons8-tiktok.svg" alt="tiktok logo" />
+      </button>
+    </div>
+
+    <hr class="solid_div" />
+
+    <!-- Newsletter Subscription -->
+  <form id="subscribeForm" class="newsletter_section">
+    <h4>Subscribe to Our Newsletter</h4>
+    <input id="subscribeEmail" type="email" placeholder="Enter your email" class="newsletter_input" />
+    <button type="submit" id="subscribeBtn" class="subscribe_btn">Subscribe</button>
+  </form>
+
+    <hr class="solid_div" />
+
+   <!-- Bottom Footer Links -->
+  <div class="footer_links">
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="about.html">About</a>
+  <a href="events.html">Events</a>
+</div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="cartModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+
+    <button id="processOrderBtn">Process Order</button>
+    <button id="clearCartBtn">Clear Cart</button>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="footer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </body>
+</html>

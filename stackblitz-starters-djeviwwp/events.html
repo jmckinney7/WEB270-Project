@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script type="module" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <img id="header_logo" src="/Bookhaven/Logo/Client3_LogoPalette1_FFF7EE.png" alt="Logo"/>
+
+      <h1>Book Haven Bookstore</h1>
+
+      <nav>
+        <a  href="/">Home</a>
+        <a  href="/gallery.html">Gallery</a>
+        <a  href="/about.html">About</a>
+        <a  href="/events.html" aria-current="page">Events</a>
+      </nav>
+    </header>
+
+    <main>
+  <!-- Page Title -->
+  <section>
+    <hr class="solid_div" />
+    <h2 class="centered_page_header">Events</h2>
+    <h3 class="subheading">Upcoming Events</h3>
+  </section>
+
+  <!-- Event Panels -->
+  <section class="event_panel_container">
+    <!-- Event 1 -->
+    <div class="event_panel">
+      <img src="/Bookhaven/Events/Author.jpg" alt="Event 1" class="event_img" />
+      <div class="event_info">
+        <h4>Author Meet & Greet</h4>
+        <p>Join us for an intimate evening with local authors as they share their journeys and sign your favorite books.</p>
+        <p><i>8493 Gateway Dr, NY, 11239 at 7:00PM EST.</i></p>
+      </div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="event_panel">
+      <img src="/Bookhaven/Events/Children.jpg" alt="Event 2" class="event_img" />
+      <div class="event_info">
+        <h4>Children's Story Hour</h4>
+        <p>A magical storytime event for kids and families, featuring lively readings, fun activities, and free goodies.</p>
+        <p><i>1029 Dickson St, GA, 30251 at 2:30PM EST.</i></p>
+      </div>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="event_panel">
+      <img src="/Bookhaven/Events/Poetry.jpg" alt="Event 3" class="event_img" />
+      <div class="event_info">
+        <h4>Poetry Night</h4>
+        <p>Celebrate the art of words with an open mic night of poetry, coffee, and community voices.</p>
+        <p><i>302A Deep Creek Blvd, VA, 23704 at 5:30PM EST.</i></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaboration Info -->
+  <section class="collab_info">
+    <h3>Events and Collaborations</h3>
+    <p>Stay in touch for future events, pop-ups, and partnership opportunities. For all inquiries, email us at <strong>info@example.com</strong>.</p>
+  </section>
+  <hr class="solid_div" />
+</main>
+
+<footer id="site_footer">
+<!-- Top Footer Nav Buttons -->
+<div class="footer_nav_buttons">
+  <button onclick="sendCustomAlert('You clicked facebook link.')" class="footer_btn">
+    <img src="Bookhaven/Icons/icons8-facebook.svg" alt="fb logo" />
+  </button>
+  <button onclick="sendCustomAlert('You clicked Twitter link.')" class="footer_btn">
+    <img src="Bookhaven/Icons/icons8-twitter.svg" alt="twitter logo" />
+  </button>
+  <button onclick="sendCustomAlert('You clicked Instagram link.')" class="footer_btn">
+    <img
+      src="Bookhaven/Icons/icons8-instagram.svg"
+      alt="instagram logo"
+    />
+  </button>
+  <button onclick="sendCustomAlert('You clicked Tiktok link.')" class="footer_btn">
+    <img src="Bookhaven/Icons/icons8-tiktok.svg" alt="tiktok logo" />
+  </button>
+</div>
+
+<hr class="solid_div" />
+
+<!-- Newsletter Subscription -->
+<form id="subscribeForm" class="newsletter_section">
+<h4>Subscribe to Our Newsletter</h4>
+<input id="subscribeEmail" type="email" placeholder="Enter your email" class="newsletter_input" />
+<button type="submit" id="subscribeBtn" class="subscribe_btn">Subscribe</button>
+</form>
+
+<hr class="solid_div" />
+
+<!-- Bottom Footer Links -->
+<div class="footer_links">
+<a href="index.html">Home</a>
+<a href="gallery.html">Gallery</a>
+<a href="about.html">About</a>
+<a href="events.html">Events</a>
+</div>
+</footer>
+  <script src="footer.js">
+  </script>
+  </body>
+</html>
