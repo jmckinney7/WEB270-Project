@@ -16,6 +16,16 @@ Type: Web Development
 ### Timeline
 06/19/2025 - 07/19/2025 (~1 month)
 
+### Screenshots
+#### Front page
+![Front Page](screenshots/front_page.png "Front page")
+#### Gallery page
+![Gallery Page](screenshots/gallery_page.png "Gallery page")
+#### About page
+![About Page](screenshots/about_page.png "About page")
+#### Events page
+![Events Page](screenshots/events_page.png "Events page")
+
 ## License / Usage
 This project is for demonstration and educational purposes only.  
 You are welcome to view the code and study it, but please do **not** copy or use it in your own project submissions.
